@@ -21,7 +21,7 @@ app.intent('countOpportunities', {
     'utterances': [ '{how many new opportunities are there today}' ]
     },
     function(req, res) {
-        res.say('There are 3 new opportunities today do you want to hear more?').shouldEndSession(true);
+        res.say('There are 3 new opportunities today do you want to hear more?').shouldEndSession(false);
         
         return true;
     }
