@@ -40,7 +40,7 @@ app.intent('listOpportunities', {
 
 app.intent('readOpportunity', {
     'slots': {},
-    'utterances': [ '{read 4|open opportunity 4}' ]
+    'utterances': [ '{read four|open opportunity four}' ]
     },
     function(req, res) {
         res.say('Customer Journey and CRM Consultant from NHS Property Services located in London. DVLA Software Engineering Capability is looking for highly skilled developers to undertake the development and support of DVLA’s applications both internal and public/customer facing. This opportunity closes Monday 14 November 2016. Visit the Digital Marketplace to apply.').shouldEndSession(true);
