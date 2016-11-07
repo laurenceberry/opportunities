@@ -6,7 +6,7 @@ var app = new alexa.app( 'opportunities' );
 
 
 app.launch( function( request, response ) {
-	response.say( 'Welcome to your test skill' ).reprompt( 'Way to go. You got it to run. Bad ass.' ).shouldEndSession( false );
+	response.say( 'Welcome Marketplace' ).reprompt( 'You can ask me to list opportunities' ).shouldEndSession( false );
 } );
 
 
