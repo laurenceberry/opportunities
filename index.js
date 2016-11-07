@@ -21,7 +21,7 @@ app.intent('countOpportunities', {
     'utterances': [ '{how many new opportunities are there today}' ]
     },
     function(req, res) {
-        res.say('There are 3 new opportunities today do you want to hear more?').shouldEndSession(false);
+        res.say('There are 3 new opportunities today do you want to hear more?').shouldEndSession(true);
         
         return true;
     }
@@ -32,7 +32,7 @@ app.intent('listOpportunities', {
     'utterances': [ '{list opportunities|new opportunities|opportunities}' ]
     },
     function(req, res) {
-        res.say('OK, the latest 3 opportunities are: 1. Customer Journey and CRM Consultant from NHS Property Services in Digital specialists. 2. Business Analyst for Qualifications Wales’ Data Collection and Statistical Publications Project from Qualifications Wales in Digital specialists. 3. Design Manual for Roads and Bridges Agile Methodology Application from Highways England in Digital outcomes. Do you want to hear more from opportunity 1, 2 or 3?').shouldEndSession(false);
+        res.say('OK, the latest 3 opportunities are: 1. Customer Journey and CRM Consultant from NHS Property Services in Digital specialists. 2. Business Analyst for Qualifications Wales’ Data Collection and Statistical Publications Project from Qualifications Wales in Digital specialists. 3. Design Manual for Roads and Bridges Agile Methodology Application from Highways England in Digital outcomes. Do you want to hear more from opportunity 1, 2, or 3?').shouldEndSession(true);
         return true;
     }
 );
