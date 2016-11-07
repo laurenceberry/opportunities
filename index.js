@@ -9,7 +9,6 @@ app.launch( function( request, response ) {
 	response.say( 'Welcome to Marketplace' ).reprompt( 'You can ask me to list opportunities' ).shouldEndSession( false );
 } );
 
-
 app.error = function( exception, request, response ) {
 	console.log(exception)
 	console.log(request);
